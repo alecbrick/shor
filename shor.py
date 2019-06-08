@@ -339,7 +339,7 @@ def factor(N):
         else:
             print("Factorization: ({}, {})".format(f1, N // f1))
             return
-        
+    print("Giving up. =/") 
 
 def main():
     N = 25
@@ -406,5 +406,8 @@ if __name__ == "__main__":
         N = int(sys.argv[1])
     except:
         print("Error: N must be an integer")
+        exit()
+    if N < 3:
+        print("Please use an N >= 3.")
         exit()
     factor(N)
