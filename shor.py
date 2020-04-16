@@ -10,9 +10,8 @@ from typing import List
 from pyquil import Program
 from pyquil.api import QVMConnection, WavefunctionSimulator
 from pyquil.gates import MEASURE, I, X, CNOT, H, Z, RESET, CCNOT, PHASE
-from pyquil.parameters import Parameter, quil_exp
 from pyquil.quil import address_qubits, DefGate
-from pyquil.quilatom import QubitPlaceholder
+from pyquil.quilatom import Parameter, QubitPlaceholder, quil_exp
 
 import time
 
